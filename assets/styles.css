@@ -1,0 +1,202 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/* HTML */
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Supermercado One', cursive;
+    height: 100%;
+}
+
+
+/* HEADER */
+
+.header {
+    height: 10vh;
+    background-color: #556655;
+    display: flex;
+}
+
+.logot {
+    width: 10%;
+    background-color: #a54f08;
+    height: 100%;
+}
+
+.titleBox {
+    width: 15em;
+    background-color: red;
+    text-align: center;
+    height: 100%;
+}
+
+.title {
+    color: #bef5da;
+    text-shadow: 0px 0px 10px black;
+}
+
+.secrets {
+    background-color: greenyellow;
+    display: none;
+    width: 60%;
+    height: 100%;
+    transition: 1s;
+}
+
+.titleBox:hover+.secrets {
+    display: block;
+}
+
+
+/*-------------------------------- NAVEGADOR SUPERIOR ----------------------------------- */
+
+.navegador {
+    border: #a7ca74;
+    background-color: gray;
+    position: sticky;
+    top: 0vh;
+}
+
+.navegador a {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-decoration: none;
+}
+
+.navegador a:visited {
+    color: rgb(217, 226, 202);
+}
+
+.navegador a:hover {
+    color: green;
+}
+
+.navegador a:active {
+    color: black;
+}
+
+.navegador a:link {
+    color: rgb(217, 226, 202);
+}
+
+.navegador__menu {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu__submenu {
+    position: relative;
+}
+
+.submenu__producto {
+    position: absolute;
+    display: none;
+    background-color: #555;
+    width: 100%;
+    list-style: none;
+}
+
+.menu__submenu:hover ul {
+    display: block;
+}
+
+.link:hover {
+    background-color: #20e28146;
+}
+
+
+/* MAIN */
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+    background-color: #ebebeb;
+}
+
+
+/* FOOTER */
+
+.footer {
+    height: 15%;
+    background-color: #335343;
+}
+
+
+/* TEST */
+
+.gridContainer {
+    display: grid;
+    height: 50%;
+    width: 50%;
+    background-color: #335343;
+    border-radius: 0.3em;
+    padding: 1em;
+    grid-template-columns: auto;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+.item1 {
+    background-color: #442266;
+}
+
+.item2 {
+    background-color: #553377;
+}
+
+.item3 {
+    background-color: #664488;
+}
+
+.item4 {
+    background-color: #775599;
+}
+
+.item5 {
+    background-color: #8866aa;
+}
+
+.item6 {
+    background-color: #9977bb;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
+}
+
+.card {
+    height: 15em;
+    border-radius: 0.4em;
+    background-color: #fff;
+    min-width: 150px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card .img {
+    height: 40%;
+    background-color: greenyellow;
+}
