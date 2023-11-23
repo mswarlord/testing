@@ -1,9 +1,18 @@
 /* RESET */
 
+
+/*ESTILOS GENERALES*/
+
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
+}
+
+.ico {
+    height: 1em;
 }
 
 
@@ -133,8 +142,21 @@ body {
 /* FOOTER */
 
 .footer {
-    height: 15%;
+    display: flex;
+}
+
+.footer--inferior {
+    display: flex;
+    justify-content: center;
     background-color: #335343;
+    padding: 0.5em;
+}
+
+.columna {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #666;
 }
 
 
